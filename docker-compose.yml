@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  web-client:
+    container_name: web-client
+    build: ./web-client
+    volumes:
+      - ./web-client:/usr/src/app
+    ports:
+      - 5000:80
